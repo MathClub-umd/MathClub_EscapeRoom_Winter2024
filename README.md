@@ -1,1 +1,1 @@
-# MathClub_EscapeRoom_Winter2024
+# MathClub_EscapeRoom_W2024
