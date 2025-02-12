@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time's Up!</title>
+    <style>
+        body {
+            background: #00274C;
+            color: #FFCB05;
+            text-align: center;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+        }
+        h1 { font-size: 3em; }
+    </style>
+</head>
+<body>
+    <h1>Better Luck Next Time!</h1>
+    <p id="message"></p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const reason = params.get('reason');
+        document.getElementById('message').textContent = 
+            reason === 'time' ? "Time has run out!" : "Too many incorrect attempts!";
+    </script>
+</body>
+</html>

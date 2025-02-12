@@ -1,16 +1,17 @@
+/* Updated CSS (style.css) */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #2c3e50;
+    background-color: #00274C; /* UMich Blue */
 }
 
 .container {
     text-align: center;
-    color: white;
+    color: #FFCB05; /* UMich Maize */
 }
 
 .lock-container {
@@ -30,46 +31,31 @@ body {
 .lock-wheel {
     width: 60px;
     height: 60px;
-    border: 3px solid #3498db;
+    border: 3px solid #FFCB05; /* Maize */
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    background-color: #ecf0f1;
-    color: #2c3e50;
+    background-color: white;
+    color: #00274C; /* Blue */
     user-select: none;
 }
 
-.arrow-btn {
+.arrow-btn, button {
     padding: 8px 20px;
     font-size: 20px;
-    background-color: #3498db;
-    color: white;
+    background-color: #FFCB05; /* Maize */
+    color: #00274C; /* Blue */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.arrow-btn:hover {
-    background-color: #2980b9;
-    transform: scale(1.1);
-}
-
-button {
-    padding: 12px 30px;
-    font-size: 18px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #2980b9;
+.arrow-btn:hover, button:hover {
+    background-color: #FDB515; /* Darker Maize */
+    transform: scale(1.05);
 }
 
 #result {
@@ -77,4 +63,14 @@ button:hover {
     font-size: 18px;
     min-height: 25px;
     font-weight: bold;
+    color: #FFCB05;
+}
+
+#status {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+#status p {
+    margin: 5px 0;
 }

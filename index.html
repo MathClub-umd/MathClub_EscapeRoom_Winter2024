@@ -1,14 +1,20 @@
+<!-- Updated HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math Club Escape Room</title>
+    <title>UMich Escape Room</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Math Club Escape Room</h1>
+        <h1>UMD Math Escape Room</h1>
+        <div id="status">
+            <p>Attempts remaining: <span id="attempts-left">7</span></p>
+            <p>Time remaining: <span id="time-remaining">20:00</span></p>
+        </div>
+        <div class="lock-container">
         <div class="lock-container">
             <div class="wheel-control">
                 <button class="arrow-btn" onclick="changeNumber(0, 1)">▲</button>
@@ -25,6 +31,32 @@
                 <div class="lock-wheel" id="wheel3">0</div>
                 <button class="arrow-btn" onclick="changeNumber(2, -1)">▼</button>
             </div>
+            <div class="wheel-control">
+                <button class="arrow-btn" onclick="changeNumber(3, 1)">▲</button>
+                <div class="lock-wheel" id="wheel4">0</div>
+                <button class="arrow-btn" onclick="changeNumber(3, -1)">▼</button>
+            </div>
+            <div class="wheel-control">
+                <button class="arrow-btn" onclick="changeNumber(4, 1)">▲</button>
+                <div class="lock-wheel" id="wheel5">0</div>
+                <button class="arrow-btn" onclick="changeNumber(4, -1)">▼</button>
+            </div>
+            <div class="wheel-control">
+                <button class="arrow-btn" onclick="changeNumber(5, 1)">▲</button>
+                <div class="lock-wheel" id="wheel6">0</div>
+                <button class="arrow-btn" onclick="changeNumber(5, -1)">▼</button>
+            </div>
+            <div class="wheel-control">
+                <button class="arrow-btn" onclick="changeNumber(6, 1)">▲</button>
+                <div class="lock-wheel" id="wheel7">0</div>
+                <button class="arrow-btn" onclick="changeNumber(6, -1)">▼</button>
+            </div>
+            <div class="wheel-control">
+                <button class="arrow-btn" onclick="changeNumber(7, 1)">▲</button>
+                <div class="lock-wheel" id="wheel8">0</div>
+                <button class="arrow-btn" onclick="changeNumber(7, -1)">▼</button>
+            </div>
+
         </div>
         <button onclick="checkCombination()">Verify Combination</button>
         <p id="result"></p>
